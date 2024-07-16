@@ -1,0 +1,264 @@
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 2000px;
+}
+/*  
+    position
+    Size
+    color
+    type */
+
+#main{}
+
+#header{
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+#nav .subnav a{
+    color: black;
+}
+
+#nav > li > a{
+    color: white;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0px 24px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover a, 
+#nav > li:hover > a{
+    background-color: #ccc;
+    color: black;
+    display: block;
+}
+
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+#header .search-button{
+    float: right;
+    cursor: pointer;
+}
+
+#header .search-icon{
+    color: white;
+    font-size: 14px;
+    line-height: 46.5px;
+    padding: 0px 24px;
+}
+
+#header .search-icon:hover{
+    background-color: #b11010;
+    display: block;
+}
+
+#slider1{
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url('/assets/img/la.jpg') top center / cover no-repeat;
+}
+
+/* #slider2{
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url('/assets/img/ny.jpg') top center / cover no-repeat;
+}
+
+#slider3{
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url('/assets/img/chicago.jpg') top center / cover no-repeat;
+} */
+
+#slider .text{
+    position: absolute;
+    bottom: 47px;
+    right: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+}
+
+#slider .text-title{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-content{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content{
+
+}
+
+#content #band{
+    padding: 64px 16px;
+    text-align: center;
+    line-height: 22.5px;
+    margin: 0 10%;
+}
+
+#content #band .band-center{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#content #band .band-opacity{
+    opacity: 0.6;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content #band .band-justify{
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#content #band-member .member-center{
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#content #band-member .band-member{
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1.5%;
+    text-align: center;
+}
+
+#content #tour{
+    background-color: black;
+    color: white;
+    padding: 64px 16px;
+    text-align: center;
+    margin: auto;
+}
+
+#content #tour .tour-center{
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#content #tour .tour-opacity{
+    opacity: 0.6;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content #tour .tour-date{
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1.5%;
+    text-align: center;
+}
+
+#content #tour .tour-date p{
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+#content #tour .tour-date p:hover{
+    background-color: #ccc;
+    color: black;
+    display: block;
+}
+
+#content #contact{
+    padding: 64px 16px;
+    text-align: center;
+    margin: auto;
+}
+
+#content #contact .contact-center{
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#content #contact .contact-opacity{
+    opacity: 0.6;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content #contact .contact-form{
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1.5%;
+    text-align: center;
+}
+
+#content #contact .contact-form input[type="text"],
+#content #contact .contact-form input[type="email"],
+#content #contact .contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#footer{}
